@@ -3,319 +3,341 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solutions</title>
+    <meta name="description" content="Legal Solutions — a boutique law firm landing page demo. Practice areas, client testimonials, FAQs, and contact form. Built with Sass.">
+    <title>Legal Solutions — Effective Counsel for Modern Cases</title>
+    <link rel="icon" type="image/png" href="Assets/Images/logo2.png">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Assets/Css/main.css">
-    <link rel="stylesheet" href="Assets/Css/header.css">
-    <link rel="stylesheet" href="Assets/Css/body.css">
-    <link rel="stylesheet" href="Assets/Css/footer.css" >
 
+    <!-- Google Fonts: serif headlines + clean sans body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Compiled Sass output -->
+    <link rel="stylesheet" href="Assets/css/styles.css">
 </head>
 <body>
-    
-     <header class="Toppanel">
-        <div class="header">
-            <div class="logodiv">
-                <img src="Assets/Images/logo2.png" alt="toplogo">
-            </div>
 
-            <nav class="mainMenu">
-                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services &#12297;</a></li>
-                    <li><a href="#">Cases &#12297;</a></li>
-                    <li><a href="#">Blog &#12297;</a></li>
-                    <li><a href="#">Contact Us &#12297;</a></li>
-                </ul>
-                
+    <!-- ======================================================
+         HEADER
+         ====================================================== -->
+    <header class="site-header" id="top">
+        <div class="site-header__inner">
+            <a href="#top" class="site-header__brand">
+                <img src="Assets/Images/logo2.png" alt="Legal Solutions logo">
+                Legal <span>Solutions</span>
+            </a>
+            <nav class="site-header__nav">
+                <a href="#top">Home</a>
+                <a href="#practice">Services</a>
+                <a href="#testimonial">Cases</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
             </nav>
-
-            <div class="topbutton">
-                <a href="#"><button type="submit">Free Consultation</button></a>
-            </div>
+            <a href="#contact" class="btn btn--gold site-header__cta">
+                <i class="fa fa-calendar"></i> Free Consultation
+            </a>
+            <button class="site-header__menu-btn" id="menuBtn" aria-label="Open menu">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
+        <nav class="mobile-menu" id="mobileMenu">
+            <a href="#top" class="mobile-link">Home</a>
+            <a href="#practice" class="mobile-link">Services</a>
+            <a href="#testimonial" class="mobile-link">Cases</a>
+            <a href="#faq" class="mobile-link">FAQ</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="btn btn--gold mobile-link">
+                <i class="fa fa-calendar"></i> Free Consultation
+            </a>
+        </nav>
     </header>
-        
-    <div class="mainBody">
-        <section class="bannerPanel">
-            <h1>We Provide Effective Legal Solutions</h1>
-            <P>There are many variations of passages of Lorem Ipsum available, but the majority
-                have suffered alteration in some form, by injected humour.</P>
-
-            <div class="search-container">
-                
-                  <input type="text" placeholder="Search Your Services.." name="search">
-                  <button type="submit">Search</button>
-            </div>
-        </section>
-
-        <section class="gridPanel">
-            <div class="gridtitlePanel">
-                <h1>The Legal Practice Area</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                    suffered alteration in some form, by injected humour</p>
-            </div>
-            <div class="gridElement">
-            
-                <div class="gridBody gridbody1">
-                    <img class="gridimage" src="Assets/Images/business.png" alt="BusinessImage">
-                    <h3>Business Law</h3>
-                    <p><small>There are many variations of
-                                    passages of Lorem Ipsum
-                                    available, but the majority have
-                                    suffered alteration in some
-                                    form, by injected humour.</small>
-                    </p>
-                    <a href="#"><img class="rightArrow" src="Assets/Images/Frame.png" alt="frameImage"></a>
-                </div>
-                        
-                        
-                <div class="gridBody gridbody2">
-                    <img class="gridimage" src="Assets/Images/criminal.png" alt="CriminalImage" >
-                    <h3>Criminal Law</h3>
-                    <p><small>There are many variations of
-                        passages of Lorem Ipsum
-                        available, but the majority have
-                        suffered alteration in some
-                        form, by injected humour.</small>
-                    </p>
-                    <a href="#"><img class="rightArrow" src="Assets/Images/Frame.png" alt="frameImage"></a>
-                </div>
-
-                        
-                        
-                <div class="gridBody gridbody3">
-                    <img class="gridimage" src="Assets/Images/child.png" alt="ChildImage" >
-                    <h3>Child Support</h3>
-                    <p><small>There are many variations of
-                        passages of Lorem Ipsum
-                        available, but the majority have
-                        suffered alteration in some
-                        form, by injected humour.</small>
-                    </p>
-                    <a href="#"><img class="rightArrow" src="Assets/Images/Frame.png" alt="frameImage"></a>
-                </div>
-                
-                <div class="gridBody gridbody4">
-                    <img class="gridimage" src="Assets/Images/education.png" alt="educationImage">
-                    <h3>Education Law</h3>
-                    <p><small>There are many variations of
-                        passages of Lorem Ipsum
-                        available, but the majority have
-                        suffered alteration in some
-                        form, by injected humour.</small>
-                    </p>
-                    <a href="#"><img class="rightArrow" src="Assets/Images/Frame.png" alt="frameImage"></a>
-                </div>
-
-                        
-                        
-                <div class="gridBody gridbody5">
-                    <img class="gridimage" src="Assets/Images/divorce.png" alt="DivorceImage" >
-                    <h3>Divorce Law</h3>
-                    <p><small>There are many variations of
-                        passages of Lorem Ipsum
-                        available, but the majority have
-                        suffered alteration in some
-                        form, by injected humour.</small>
-                    </p>
-                    <a href="#"><img class="rightArrow" src="Assets/Images/Frame.png" alt="frameImage"></a>
-                </div>
-
-                        
-                        
-                <div class="gridBody gridbody6">
-                    <img class="gridimage" src="Assets/Images/tax.png" alt="TaxImage" >
-                    <h3>Tax Law</h3>
-                    <p><small>There are many variations of
-                        passages of Lorem Ipsum
-                        available, but the majority have
-                        suffered alteration in some
-                        form, by injected humour.</small>
-                    </p>
-                    <a href="#"><img class="rightArrow" src="Assets/Images/Frame.png" alt="frameImage"></a>
-                </div>
-
-                      
-            
-            </div>
-
-        </section>
-
-        <section class="sliderPanel">
-            <div class="SliderTitlePanel">
-                <h1>What Our Client Say</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                    suffered alteration in some form, by injected humour.</p>
-            </div>
-            <div class="sliderBodyPanel">
-                <div class="sliderLeftArrow"> <a href="#"> &#9001;</a>  </div>
-                <div class="sliderbodyContent">
-                    <img src="Assets/Images/prifeleimage.png" alt="ProfileImage">
-                    <div class="nameanddes">
-                        <h4>Md. Jahudul Islam Hemel</h4>
-                        <p class="designation">Technical Support Engineer</p>
-                     </div>
-                    <p class="review">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                        literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney
-                        College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
-                </div>
-                <div class="sliderRightArrow"> <a href="#">&#12297;</a> </div>
-            </div>
-
-        </section>
-
-        <section class="faqPanel">
-            <div class="faqTitlePanel">
-                <h1>Frequently Asked Any Questions</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                    suffered alteration in some form, by injected humour.</p>
-
-            </div>
-
-            <div class="faqbodypanel">
-                <div class="faqContentPanel">
-                    <div class="faq faq1">
-                        <div class="faq1body">
-                            <h4>1. Are application fee waivers available?</h4>
-                            <p>There are many variations of passages of Lorem Ipsum
-                            available, but the majority have suffered alteration in some
-                            form, by injected humour, 
-                            </p>
-                        </div>
-                        <div class="minusicon"> <a href="#"> &#8722; </a></div>
-                        
-                    </div>
-                    <div class="faq faq2">
-                        <h4>1. Are application fee waivers available?</h4>
-                        <div class="minusicon"> <a href="#"> &#43; </a></div>
-
-                    </div>
-                    <div class="faq faq3">
-                        <h4>1. Are application fee waivers available?</h4>
-                        <div class="minusicon"> <a href="#"> &#43; </a></div>
-                    </div>
-                    <div class="faq faq4">
-                        <h4>1. Are application fee waivers available?</h4>
-                        <div class="minusicon"> <a href="#"> &#43; </a></div>
-                    </div>
-                </div>
-                
-                <div class="faqImagePanel">
-                    <img src="Assets/Images/faq.png" alt="FaqImage">
-                </div>
-
-            </div>
-        </section>
-
-        <section class="contactPanel">
-            <div class="contactTitlePanel">
-                <h1>Contact With Us</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                    suffered alteration in some form, by injected humour.</p>
-            </div>
-
-            <div class="contactBodypanel">
-                <div class="contactGridPanel">
-                    <div class="contactGrid addressgrid">
-                        <img src="Assets/Images/address.png" alt="addressImage" >
-                        <h3>Address</h3>
-                        <p>A108 Adam Street, <br> New York, NY 535022</p>
-                    </div>
-
-                    <div class="contactGrid contactgrid2">
-                        <img src="Assets/Images/call.png" alt="ContactImage" >
-                        <h3>Call Us</h3>
-                        <p>+88 01750 00 00 00<br> +88 01750 00 00 00</p>
-                    </div>
 
 
-                    <div class="contactGrid emailgrid">
-                        <img src="Assets/Images/email.png" alt="EmailImage" >
-                        <h3>Email Us</h3>
-                        <p>info@gmail.com<br>info@gmail.com</p>
-                    </div>
-
-                    <div class="contactGrid workgrid">
-                        <img src="Assets/Images/time.png" alt="ContactImage" >
-                        <h3>Working Hours</h3>
-                        <p>Mon-Fri: 9AM to 5PM<br> Sunday: 9AM to 1 PM</p>
-                    </div>
-
-                </div>
-
-                <div class="contactFormbody">
-                    <form class="contactForm">
-                        <input type="text" name="name" placeholder="Your Name" id="fromName" >
-                        <input type="email" name="email" placeholder="Your Email" id="formemail">
-                        <input type="text"  name="subect" placeholder="Subject" id="formSubject"> 
-                        <textarea type="text"  name="Message" placeholder="Your Message" Id="formMessage"></textarea> 
-                        <a class="formButton" href="#" ><button>Send Message</button></a>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </div>
-       
-    <footer class="footer">
-        <div class="footerbody">
-            <div class="aboutus footerdiv">
-                <img src="Assets/Images/logo.png" alt="LogoImage" >
-                <p>There are many variations of
-                    passages of Lorem Ipsum
-                    available, but the majority have
-                    suffered alteration in some
-                    form, by injected humour.</p>
-            </div>
-            <div class="usfulURL footerdiv">
-                <h3>Usefull Link</h3>
-                <nav class="footerNav">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#" >Cases</a></li>
-                        <li><a href="#" >Blogs</a></li>
-                        <li><a href="#" >Contact us</a></li>
-                    </ul>
-                </nav>
-    
-            </div>
-            <div class="contactInfo footerdiv">
-                <h3>Contact Now</h3> 
-                <address>555 4th 5t NW, Washington
-    
-                    DC 20530, United States
-                </address>
-                <p>+88 01750 000 000 <br>
-    
-                    +88 01750 000 000
-                </p>
-                <email>
-                    info@gmail.com
-                </email>
-    
-            </div>
-            <div class="subscribe footerdiv">
-                <h3>Subscribe</h3>
-                <p>Subscribe for our latest &
-                    Articles. We Won t Give You
-                    Spam Mails
-                </p>
-                <div class="footeremail">
-                    <input type="email" name="email" placeholder="Email Address">
-                    <a href="#" ><i class="fa fa-paper-plane-o"></i>  </a>
-    
-                </div>
-                
-            </div>
-
+    <!-- ======================================================
+         HERO
+         ====================================================== -->
+    <section class="hero">
+        <div class="container">
+            <span class="hero__eyebrow">Trusted Counsel · Since 1998</span>
+            <h1 class="hero__title">Effective <em>legal solutions</em> for life's most consequential moments.</h1>
+            <p class="hero__lead">From contracts to courtrooms, our attorneys handle complex cases with clarity, care, and a track record that speaks for itself.</p>
+            <form class="hero__search" id="heroSearch">
+                <input type="text" id="heroSearchInput" placeholder="Search a service — e.g. divorce, tax, business…">
+                <button type="submit" class="btn btn--gold">
+                    <i class="fa fa-search"></i> Search
+                </button>
+            </form>
         </div>
-        
+    </section>
 
+
+    <!-- ======================================================
+         PRACTICE AREAS
+         ====================================================== -->
+    <section class="section practice" id="practice">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">What we do</span>
+                <h2>The Legal Practice Areas</h2>
+                <p>Six core areas where our attorneys have built deep expertise. We turn down cases outside these areas — focus is what makes the difference.</p>
+            </div>
+        </div>
+        <div class="practice__grid">
+            <article class="practice__card demo-card">
+                <div class="icon-wrap"><img src="Assets/Images/business.png" alt="Business law icon"></div>
+                <h3>Business Law</h3>
+                <p>Entity formation, contract drafting, M&amp;A, IP protection, and ongoing corporate compliance for startups and SMBs.</p>
+                <span class="arrow">Learn more</span>
+            </article>
+            <article class="practice__card demo-card">
+                <div class="icon-wrap"><img src="Assets/Images/criminal.png" alt="Criminal law icon"></div>
+                <h3>Criminal Defense</h3>
+                <p>Pre-charge counsel, trial defense, plea negotiation, and post-conviction appeals across federal and state courts.</p>
+                <span class="arrow">Learn more</span>
+            </article>
+            <article class="practice__card demo-card">
+                <div class="icon-wrap"><img src="Assets/Images/child.png" alt="Family law icon"></div>
+                <h3>Child Support</h3>
+                <p>Custody arrangements, support modifications, mediation, and advocacy that keeps the child's well-being at the center.</p>
+                <span class="arrow">Learn more</span>
+            </article>
+            <article class="practice__card demo-card">
+                <div class="icon-wrap"><img src="Assets/Images/education.png" alt="Education law icon"></div>
+                <h3>Education Law</h3>
+                <p>School disputes, special-education advocacy, Title IX, and policy work for educators and families alike.</p>
+                <span class="arrow">Learn more</span>
+            </article>
+            <article class="practice__card demo-card">
+                <div class="icon-wrap"><img src="Assets/Images/divorce.png" alt="Divorce law icon"></div>
+                <h3>Divorce &amp; Family</h3>
+                <p>Mediated separations, asset division, alimony, and post-decree modifications handled with discretion.</p>
+                <span class="arrow">Learn more</span>
+            </article>
+            <article class="practice__card demo-card">
+                <div class="icon-wrap"><img src="Assets/Images/tax.png" alt="Tax law icon"></div>
+                <h3>Tax Law</h3>
+                <p>IRS audits and disputes, offers in compromise, estate planning, and small-business tax structuring.</p>
+                <span class="arrow">Learn more</span>
+            </article>
+        </div>
+    </section>
+
+
+    <!-- ======================================================
+         TESTIMONIAL SLIDER
+         ====================================================== -->
+    <section class="section testimonial" id="testimonial">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">What clients say</span>
+                <h2>Words from the people we've helped.</h2>
+            </div>
+        </div>
+        <div class="testimonial__slider">
+            <div class="testimonial__viewport">
+                <div class="testimonial__track" id="testimonialTrack">
+                    <div class="testimonial__slide">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p class="quote-text">They handled a complicated business merger I'd been putting off for two years. Calm, methodical, and they explained every step in plain English. Worth every dollar.</p>
+                        <div class="author">
+                            <img src="Assets/Images/slider-1.jpg" alt="Sarah Mitchell">
+                            <div class="meta">
+                                <div class="name">Sarah Mitchell</div>
+                                <div class="role">Founder, Mitchell &amp; Co.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__slide">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p class="quote-text">A messy custody case ended in a settlement neither side felt cheated by. That's not luck — that's craft. I'd recommend them to anyone going through the same.</p>
+                        <div class="author">
+                            <img src="Assets/Images/slider-2.jpg" alt="James Carter">
+                            <div class="meta">
+                                <div class="name">James Carter</div>
+                                <div class="role">Software Engineer</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial__slide">
+                        <div class="quote-mark">&ldquo;</div>
+                        <p class="quote-text">The IRS letter scared the daylights out of me. They took it from there — three months later it was resolved, no penalties, no stress. Real professionals.</p>
+                        <div class="author">
+                            <img src="Assets/Images/slider-3.jpg" alt="Maya Patel">
+                            <div class="meta">
+                                <div class="name">Maya Patel</div>
+                                <div class="role">Independent Designer</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial__controls">
+                <button id="prevSlide" aria-label="Previous testimonial"><i class="fa fa-chevron-left"></i></button>
+                <button id="nextSlide" aria-label="Next testimonial"><i class="fa fa-chevron-right"></i></button>
+            </div>
+            <div class="testimonial__dots" id="testimonialDots"></div>
+        </div>
+    </section>
+
+
+    <!-- ======================================================
+         FAQ
+         ====================================================== -->
+    <section class="section faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">Common questions</span>
+                <h2>Answers, before you ask.</h2>
+            </div>
+        </div>
+        <div class="faq__layout">
+            <div class="faq__list">
+                <div class="faq__item">
+                    <button type="button">
+                        How much does an initial consultation cost?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="answer">
+                        <p>The first 30-minute consultation is free. We use it to scope your case, explain likely outcomes, and quote a fair fee — no pressure, no obligation.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button type="button">
+                        Do you offer payment plans?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="answer">
+                        <p>Yes — for most non-criminal cases we can split fees over 3 to 12 months, interest-free. We'll discuss what works for your situation during the consultation.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button type="button">
+                        How long does a typical case take?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="answer">
+                        <p>It depends on complexity and court schedules. Simple contracts close in days; mediated divorces in weeks; full litigation can run 6–18 months. We'll give you a realistic timeline up front.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <button type="button">
+                        Do you handle cases outside your home state?
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="answer">
+                        <p>For federal and IRS matters, yes — anywhere in the US. For state-specific work, we partner with vetted local counsel so you get expertise on the ground.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__image">
+                <img src="Assets/Images/faq.png" alt="Legal consultation">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ======================================================
+         CONTACT
+         ====================================================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <span class="eyebrow">Get in touch</span>
+                <h2>Tell us about your case.</h2>
+                <p>Whether it's urgent or just a question, we read every message and respond within one business day.</p>
+            </div>
+        </div>
+        <div class="contact__layout">
+            <div class="contact__info">
+                <div class="contact__info-card">
+                    <div class="icon-wrap"><img src="Assets/Images/address.png" alt="Address"></div>
+                    <h3>Address</h3>
+                    <p>555 4th St NW<br>Washington, DC 20530</p>
+                </div>
+                <div class="contact__info-card">
+                    <div class="icon-wrap"><img src="Assets/Images/call.png" alt="Phone"></div>
+                    <h3>Call Us</h3>
+                    <p>+1 (202) 555-0140<br>Mon–Fri, 9am–6pm ET</p>
+                </div>
+                <div class="contact__info-card">
+                    <div class="icon-wrap"><img src="Assets/Images/email.png" alt="Email"></div>
+                    <h3>Email Us</h3>
+                    <p>jahidhemel@gmail.com<br>Replies within 24h</p>
+                </div>
+                <div class="contact__info-card">
+                    <div class="icon-wrap"><img src="Assets/Images/time.png" alt="Hours"></div>
+                    <h3>Working Hours</h3>
+                    <p>Mon–Fri: 9am – 6pm<br>Sat: by appointment</p>
+                </div>
+            </div>
+            <form class="contact__form" id="contactForm">
+                <h3>Send us a message</h3>
+                <p>Fill in the form and one of our attorneys will get back to you within 24 hours.</p>
+                <input type="text" id="cName" name="name" placeholder="Your name" required>
+                <input type="email" id="cEmail" name="email" placeholder="Your email" required>
+                <input type="text" id="cSubject" name="subject" placeholder="Subject (e.g. Tax advice for small business)">
+                <textarea id="cMessage" name="message" placeholder="Briefly describe your case…" required></textarea>
+                <button type="submit" class="btn btn--primary">
+                    <i class="fa fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- ======================================================
+         FOOTER
+         ====================================================== -->
+    <footer class="site-footer">
+        <div class="site-footer__grid">
+            <div class="site-footer__brand">
+                <img src="Assets/Images/logo.png" alt="Legal Solutions">
+                <p>A demo law-firm landing page built as a portfolio piece — modern Sass architecture, real interactions, and clean responsive design.</p>
+                <div class="site-footer__socials">
+                    <a href="https://www.linkedin.com/in/md-jahidul-islam-hemel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/jahid.hemel" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="mailto:jahidhemel@gmail.com" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Useful Links</h4>
+                <ul class="site-footer__links">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#practice">Services</a></li>
+                    <li><a href="#testimonial">Cases</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="site-footer__contact">
+                <h4>Contact Now</h4>
+                <address>
+                    555 4th St NW<br>
+                    Washington, DC 20530
+                </address>
+                <p style="margin-top:0.5rem">
+                    <a href="tel:+12025550140">+1 (202) 555-0140</a><br>
+                    <a href="mailto:jahidhemel@gmail.com">jahidhemel@gmail.com</a>
+                </p>
+            </div>
+            <div class="site-footer__newsletter">
+                <h4>Subscribe</h4>
+                <p style="margin-bottom:1rem;font-size:0.9rem;color:rgba(255,255,255,0.7)">Legal news and case studies, once a month. No spam.</p>
+                <form id="newsletterForm">
+                    <input type="email" id="newsEmail" placeholder="Email address" required>
+                    <button type="submit" aria-label="Subscribe"><i class="fa fa-paper-plane-o"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="site-footer__bar">
+            &copy; <span id="year">2026</span> Legal Solutions demo · Built by
+            <a href="https://jahidhemel.github.io" target="_blank" rel="noopener">Md. Jahidul Islam Hemel</a>
+        </div>
     </footer>
 
-    
-    
+    <script src="Assets/js/main.js" defer></script>
 </body>
 </html>
